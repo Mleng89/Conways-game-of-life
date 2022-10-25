@@ -13,4 +13,4 @@
 2. Any dead cell with 3 live neighbors becomes a live cell.
 3. All other live cells die in the next generation. Similarly, all other dead cells stay dead.
 
-[Requirements/Rules obtained from Wiki](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Rules)
+🛠️ [Requirements/Rules obtained from Wiki](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life#Rules)
