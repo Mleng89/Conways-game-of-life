@@ -19,6 +19,10 @@ TODO:
 """
 
 
+def draw_grid():
+    pass
+
+
 def main():
     run = True
     # setting FPS to 60
