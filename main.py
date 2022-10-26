@@ -1,4 +1,5 @@
 import pygame
+import grid
 
 pygame.init()
 
@@ -9,6 +10,13 @@ pygame.display.set_caption("Conway's Game of Life")
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 BLUE = (65, 105, 225)
+
+"""
+TODO:
+- Alive or dead cells === 0 & 1? True or False?
+    - Birth happens with 3 neighbors
+    - Death happens with fewer than 2 or greater than 3
+"""
 
 
 def main():
