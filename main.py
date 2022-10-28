@@ -11,12 +11,6 @@ BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 BLUE = (65, 105, 225)
 
-# """
-# TODO:
-# - Alive or dead cells === 0 & 1? True or False?
-#     - Birth happens with 3 neighbors
-#     - Death happens with fewer than 2 or greater than 3
-# """
 
 """
 initalize class.method(WIDTH,HEIGHT,CELL/BLOCK_SIZE)
@@ -33,6 +27,18 @@ def draw_grid():
 
 """
 Conway logic:
+
+positions:
+(-1,-1) (0,-1)(1,-1)
+
+(-1,0)    X     (1,0)
+
+(-1,1)  (0,1)  (1,1)
+
+TODO:
+- Alive or dead cells === 0 & 1? True or False?
+     - Birth happens with 3 neighbors
+     - Death happens with fewer than 2 or greater than 3
 
 loop grid:
     loop each row:
