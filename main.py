@@ -11,31 +11,45 @@ BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 BLUE = (65, 105, 225)
 
-"""
-TODO:
-- Alive or dead cells === 0 & 1? True or False?
-    - Birth happens with 3 neighbors
-    - Death happens with fewer than 2 or greater than 3
-"""
+# """
+# TODO:
+# - Alive or dead cells === 0 & 1? True or False?
+#     - Birth happens with 3 neighbors
+#     - Death happens with fewer than 2 or greater than 3
+# """
 
 
 def draw_grid():
-    pass
+    block_size = 100  # Set the size of the grid block
+    for x in range(0, WIDTH, block_size):  # (start, stop, step) === (0, 900/blocksize)
+        for y in range(0, HEIGHT, block_size):
+            rect = pygame.Rect(x, y, block_size, block_size)
+            pygame.draw.rect(WINDOW, WHITE, rect, 1)
+
+
+"""
+Conway logic:
+loop grid:
+    loop each row:
+        If (current cell's neighbors)
+"""
 
 
 def main():
     run = True
     # setting FPS to 60
     clock = pygame.time.Clock()
+    WINDOW.fill(BLACK)
     while run:
+        draw_grid()
         clock.tick(60)
-        WINDOW.fill((0, 0, 0))
         # Following loop is required or else pygame will freeze.
         for event in pygame.event.get():
             # print("what are events", event)
             if event.type == pygame.QUIT:
-                run = False
-    pygame.quit()
+                # run = False
+                pygame.quit()
+        pygame.display.update()
 
 
 main()

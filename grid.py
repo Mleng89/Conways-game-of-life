@@ -11,7 +11,7 @@ Neighborhood:
 
 
 class Grid:
-    def __init__(self, width, height,cells):
+    def __init__(self, width, height, cells):
         self.columns = height
         self.rows = width
 
@@ -22,3 +22,4 @@ class Grid:
 
     def setup(self):
         # grid = make_list(10, 10)
+        pass
