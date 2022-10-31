@@ -34,7 +34,7 @@ def draw_grid(screen: pygame.Surface, grid: Grid) -> None:
     for (x, y) in grid.cells:
         pygame.draw.rect(
             screen,
-            (255, 0, 0),
+            BLUE,
             (
                 x * cell_width + border_size,
                 y * cell_height + border_size,
